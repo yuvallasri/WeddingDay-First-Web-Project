@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="myjavascript.js" > </script>
+<head>
+    <title>y&s wedding</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="myjavascript.js" > </script>
+</head>
+<body onload="currentSlide(1)">
+        <a name="home"></a>
+    <div id="title" onmouseout="mouseOut()" >
+            <h1>Y&S<img src="photos/rings.png" width="10%">WEDDING</h1>
+        </div>
+        <div id="topnav">
+                    <a href="#home">Home</a>
+                   <a href="#about">About</a>
+                   <a href="#pictures">Pictures</a>
+                   <a href="#location">Location</a>
+                   <a href="#schedule">Schedule</a>
+                   <a href="#rsvp">RSVP</a>
+                   <a href="#contact">Contact us</a>
+        </div>
+            <ul id="demo" onmouseover="over()"  onmouseout="out()">
+                <p>Family and Friends mark your calendars for September 16th, 2019 for our Wedding party!!</p>
+                    <p> This is one you don't wanna miss out on. We have tons and tons of good food, alcohol and great music.</p> 
+                    <p>DJ Sharon Gadasi  will be playing music all night long!</p>
+                    <p> We would love to have all of you come out and see us on September 16th and can't thank you all enough for the endless amounts of love ♥</p>
+                
+            </ul>
+            <div id="semititle">
+            <a name="pictures"></a>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="photos/savethedate.jpg" style="width:100%">
+                  <div class="text">photo number 1</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="photos/handsring.jpg" style="width:100%">
+                  <div class="text">photo number 2</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="photos/photo1.jpg" style="width:100%">
+                  <div class="text">photo number 3</div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+              <a name="schedule"></a>
+            <div id="semititle">
+            <p>Schedule</p>
+            </div>
+            <div class="schedule">
+            <ul>
+              <li>19:00-20:30 הגעה ובופה</li>
+              <li>20:30-21:00 חופה</li>
+              <li>21:30-22:30 מנה ראשונה</li>
+              <li>22:30-00:00 מסיבה</li>
+            </ul>
+          </div>
+            <div id="semititle">
+             <a name="location"></a>
+            <p>Location</p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13583.695642389877!2d34.6409977!3d31.6633014!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc919d23d95ef2a32!2z15LXoNeZINeU16bXkdeZ!5e0!3m2!1siw!2sil!4v1554844797313!5m2!1siw!2sil" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <a href="https://www.facebook.com/"><p><img src="photos/facebook.png" alt="facebook" width="50" height="50"></p></a>
+            <div id="table">
+            <table>  
+                    <tr>
+                      <th>shuttle num</th>
+                      <th>time</th> 
+                      <th>direction</th>
+                    </tr>
+                    <tr>
+                      <td>001</td>
+                      <td>18:00</td> 
+                      <td>to the party!</td>
+                    </tr>
+                    <tr>
+                      <td>002</td>
+                      <td>18:30</td> 
+                      <td>to the party!</td>
+                    </tr>
+                    <tr>
+                            <td>003</td>
+                            <td>01:00</td> 
+                            <td>Ber Seva</td>
+                          </tr>
+                          <tr>
+                                <td>004</td>
+                                <td>02:00</td> 
+                                <td>Ber Seva</td>
+                          </tr>
+                  </table>
+                </div>
+                  <div id="semititle">
+                      <a name="rsvp"></a>
+            <p>RSVP</p>
+            </div>
+            <form>
+                Full name:<br>
+                <input type="text" required pattern="[A-Za-z ]+">
+                <br>
+                Phone number:<br>
+                <input type="tel" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <br>
+                Email:<br>
+                <input  type="email" required>
+                <br>
+                Number of guest:<br>
+                <input type="number" required min="1">
+                <br>
+                Arrivel method:<br>
+                
+                <select name="Arrivel">
+                <option value="shuttle">Shuttle</option>
+                <option value="Independently">Independently</option>
+                </select>
+                <br>
+                Comments:<br>
+                <input type="text"  maxlength="200">
+                <br>
+                <br>
+                <input type="submit" value="Submit">
+                <br>
+              </form> 
+              
+            <a name="contact"></a> 
+            <!-- Trigger/Open The Modal -->
+<button id="myBtn" onclick="onclickbtn()">contact us</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <p><img src="photos/savethedate.jpg"><br><a href="mailto:yuvallasri04@gmail.com?&subject=yswedding&body=hello">Contact us</a><br><button id="mBtn" onclick="onclickbtnexit()">close</button>
+    </p>
+  </div>
+
+</div>   
+<p><a href="https://github.com/yuvallasri"> &copy; Y.L STUDIO</a><p>
+
+    
+</body>
+</html>
